@@ -66,6 +66,6 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(saatu_maara, 8)
 
     def test_string_output(self):
-        self.assertTrue(str(self.varasto) == "saldo = 0, vielä tilaa 10")
+        self.assertTrue(str(self.varasto) == "saldo = 0.0, vielä tilaa 10.0")
         self.varasto.lisaa_varastoon(8)
-        self.assertTrue(str(self.varasto) == "saldo = 8, vielä tilaa 2")
+        self.assertTrue(str(self.varasto) == "saldo = 8.0, vielä tilaa 2.0")
